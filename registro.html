@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ingresa a la Tienda</title>
+     
+    <!--Mi css-->
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+</head>
+ <!--Intento NavBar fixed-->
+ <header class="headerNav">
+    <div class="contenedorNav logo-nav-container">
+        <img class= "logoDimorphoteka" src="assets/icons/logosinfondo.png" width="90" alt="Logo">
+        <span class="menuIcon"><img class="menuHam" src="assets/icons/menuHam.png" alt="logomenu" width="10%"></span>
+        <nav class="navigation">
+          <ul>
+                <li><a href="portal.html">Inicio</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="registro.html">¿Cómo comprar?</a></li>
+                <li><a href="index.html">Tienda</a></li>
+                <li><a href="#">Contacto</a></li>
+          </ul>
+        </nav>
+        <a href="#" class="carritoIcon"><img class="logoCarrito" src="assets/icons/logocarrito.png" alt="logocarrito" width="8%"></a>
+    </div>
+  </header>          
+<body class="body-registro">
+    <h2>Registrate para <br>comprar en la Tienda</h2>
+    <!--Contenedor formulario-->
+    <div class="container">
+        
+        <div class="header">
+            <h2 class="regi">Crea tu cuenta</h2>
+        </div>
+        <!--Formulario-->
+        <form class="formulario" id="formulario">
+
+            <div class="form-control">
+                <label for="username">Nombre de Usuario</label>
+                <input type="text" placeholder="nombredeusuario123" id="nombreUsuario"/>
+                <i class="fas fa-check-circle"></i>
+                <i class="fas fa-exclamation-circle"></i>
+                <small>Error</small>
+            </div>
+
+            <div class="form-control">
+                <label for="username">Email</label>
+                <input type="email" placeholder="hola@mail.com" id="email"/>
+                <i class="fas fa-check-circle"></i>
+                <i class="fas fa-exclamation-circle"></i>
+                <small>Error</small>
+            </div>
+
+            <div class="form-control">
+                <label for="username">Contraseña</label>
+                <input type="password" placeholder="contraseña" id="contrasenia"/>
+                <i class="fas fa-check-circle"></i>
+                <i class="fas fa-exclamation-circle"></i>
+                <small>Error</small>
+            </div>
+
+            <div class="form-control">
+                <label for="username">Confirma tu contraseña</label>
+                <input type="password" placeholder="confirmacion de contraseña" id="contrasenia2"/>
+                <i class="fas fa-check-circle"></i>
+                <i class="fas fa-exclamation-circle"></i>
+                <small>Error</small>
+            </div>
+
+            <button onclick="guardarLS()">Enviar</button>
+
+        </form>
+
+    </div>
+    <!--Mi script-->
+    <script src="js/formulario.js"></script>
+    <!--Script fontawesome por icons-->
+    <script src="https://kit.fontawesome.com/1ad82abe42.js" crossorigin="anonymous"></script>
+</body>
+</html>

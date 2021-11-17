@@ -1,0 +1,42 @@
+body {
+    background-image: url("/assets/img/fotoportal.JPG");
+    width: auto;
+}
+
+.contenedor-input{
+    display: block;
+    margin-top: 150px;
+    border-radius: 5px;
+    text-align: center;
+    
+}
+.comoEsNombre {
+    text-align: center;
+    padding-bottom: 10px;
+    color: lavender;
+    font: italic bold 35px Georgia, Serif;
+}
+.input-nombre {
+    text-align: center;
+    font-size: 20px;
+    background-image: linear-gradient(to left, #8F99C2, #669999);
+    padding: 5px 0;
+}
+.contenedor-btn {
+    display: flex;
+    justify-content: center;
+}
+.btn-portal {
+    background: linear-gradient(145deg, #d8cfea, #b6aec5);
+    box-shadow:  9px 9px 8px #7b7686,
+             -9px -9px 8px #ffffff;
+    border-radius: 6px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-top: 50px;
+    color: #735285;
+    font-size: 35px;
+    font-weight: 500;
+    padding: 15px 32px;
+    text-align: center;
+    cursor: pointer;
+}
