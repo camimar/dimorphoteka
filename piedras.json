@@ -3,7 +3,7 @@
             "nombre": "Cuarzo Jardin",
             "rareza": "Extraña, accesible",
 	        "descripción": "Se trata de un cristal de cuarzo trasparente <br>pero con muchas inclusiones de otros <br>cuarzos dentro,lo que da por resultado,<br> sobre todo en minerales pulidos, <br>un efecto de jardín", 
-            "image": "/assets/jsonpiedras/1cuarzojardin.jpg"},
+            "image": "assets/jsonpiedras/1cuarzojardin.jpg"},
 
    {"id": 2,
             "nombre": "Vanadinita",
