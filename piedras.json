@@ -9,19 +9,19 @@
             "nombre": "Vanadinita",
             "rareza": "Poco común, no económica",
 	        "descripción":"Su nombre se debe a su alto <br>contenido en el elemento vanadio, <br>aunque en algunos sitios recibe<br> el sinónimo de plomo pardo.<br> Se caracteriza por su crecimiento <br>en prismas hexagonales y su color rojo intenso.", 
-            "image": "/assets/jsonpiedras/2vanadinita.jpg"},
+            "image": "assets/jsonpiedras/2vanadinita.jpg"},
 
     {"id": 3,
             "nombre": "Crisocola",
             "rareza": "Común, económica",
 	        "descripción":"Es un mineral del grupo de silicatos. <br>Podemos observarlo formando <br>incrustaciones en la roca,<br> en masas estalactíticas<br> o bien rellenando vetas,<br> con un intenso color verde brillante a azulado.<br> Los ejemplares de mayor pureza, <br>una vez pulidos llegan a ser piedras<br> ornamentales muy apreciadas.",
-            "image": "/assets/jsonpiedras/3crisocola.jpg"},
+            "image": "assets/jsonpiedras/3crisocola.jpg"},
 
     {"id": 4,
             "nombre": "Crocoíta",
             "rareza": "Poco común, no económica",
 	        "descripción": "La crocoíta aparece comúnmente <br>en forma de cristales,<br> usualmente como largos cristales prismáticos<br> y más raramente como cristales redondeados,<br> pero casi siempre pobremente <br>terminados con un color rojo-jacinto brillante, <br>translúcidos y de brillo adamantino.",
-            "image": "/assets/jsonpiedras/4crocoita.jpg"},
+            "image": "assets/jsonpiedras/4crocoita.jpg"},
 
     {"id": 5,
             "nombre": "Aragonito",
