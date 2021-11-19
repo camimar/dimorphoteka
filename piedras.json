@@ -27,32 +27,32 @@
             "nombre": "Aragonito",
             "rareza": "Común, no económica",
 	        "descripción": "El aragonito o aragonita es una de las <br>formas cristalinas del carbonato de calcio. <br>Puede encontrarse en forma de estalactitas, <br>y con prismas geométricos interesantes, <br>que la convierten en una pieza usual de colección.",
-            "image": "/assets/jsonpiedras/5aragonito.jpg"},
+            "image": "assets/jsonpiedras/5aragonito.jpg"},
 
     {"id": 6,
             "nombre": "Cobalto Calcita",
             "rareza": "Extraña, precios elevados",
 	        "descripción": "La cobaltocalcita o calcita cobaltifera <br>es una variedad de calcita <br>con un pequeño contenido de cobalto. <br>Suele encontrarse en el Norte africano",
-            "image": "../assets/jsonpiedras/6cobaltocalcita.jpg"},
+            "image": "assets/jsonpiedras/6cobaltocalcita.jpg"},
 
 
     {"id": 7,
             "nombre": "Malaquita",
             "rareza": "Común, no económica",
 	        "descripción": "En la naturaleza la encontramos <br>en pequeños cristales,en forma masiva <br>o formando estalactitas. <br>Frecuentemente se encuentra <br>como pseudomorfismo de la azurita.", 
-            "image": "../assets/jsonpiedras/7malaquita.jpg"},
+            "image": "assets/jsonpiedras/7malaquita.jpg"},
 
 
     {"id": 8,
             "nombre": "Mokaita",
             "rareza": "Común, económica",
 	        "descripción": "Es una variedad de Jaspe procedente<br> de australia. Recibe su nombre <br>vulgar de su lugar de procedencia: <br>en la Estación de Mooka, Australia.", 
-            "image": "../assets/jsonpiedras/8jaspemokaita.jpg"},
+            "image": "assets/jsonpiedras/8jaspemokaita.jpg"},
 
     {"id": 9,
             "nombre": "Aragonita azul",
             "rareza": "Poco común, no económica",
 	        "descripción": "El significado de su nombre<br> viene de su descubrimiento<br> en Aragón (España), pero desde <br>entonces se ha encontrado en otros lugares. <br>Dependiendo de su yacimiento, <br>será del color que se encuentre", 
-            "image": "../assets/jsonpiedras/9aragonitazul.jpg"}
+            "image": "assets/jsonpiedras/9aragonitazul.jpg"}
 
 ]
