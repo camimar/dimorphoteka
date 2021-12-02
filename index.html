@@ -23,7 +23,7 @@
               <ul>
                     <li><a href="portal.html">Inicio</a></li>
                     <li><a href="blog.html">Blog</a></li>
-                    <li><a href="registro.html">¿Cómo comprar?</a></li>
+                    <li><a href="registro.html">Registro para comprar</a></li>
                     <li><a href="index.html">Tienda</a></li>
                     <li><a href="#">Contacto</a></li>
               </ul>
@@ -36,109 +36,58 @@
           <!--Saludo-->
           <div class="espacio-banner-saludo">
               <p class="saludo">Hola</p><p class="saludo" id="nombre-visitante"></p><p class="saludo">, bienvenidx!</p>
-              
           </div>
-      
             <h1 class="titulo">Tienda Virtual</h1>
             <div class="divCierre"><!--Row titulos / categorías-->
-                  <h2 class="titulo2">Joyas en Descuento!</h2>
-                    <p class="descuento">Podes ver nuestros descuentos haciendo click en el botón de abajo</p>
-                    <button id= "btn-mostrar-ocultar" class="btnMostrar">Ocultar</button>
+              <h2 class="titulo2">Joyas en Descuento!</h2>
+                <p class="descuento">Podes ver nuestros descuentos haciendo click en el botón de abajo</p>
+                <button id= "btn-mostrar-ocultar" class="btnMostrar">Ocultar</button>
             </div>
             <!--Tabla descuentos DOM-->
             <div id="tabla-dom" class="tablaDescuento">
-                
+              <!--aqui se genera la tabla-->  
             </div>
           </div>
           <!--Contenedor General Tienda-->
           <div>
-              <!--Input para filtrar cards-->
-              <div class="input-filtrar">
-                <div id="filtro">
-                  <!--acá poner titulo con dom, sino sacar este div-->
-                </div>
-                <input type="text" name="" id="filtrar" class="filtrar" placeholder="¿Qué estás buscando?" onkeyup="buscarProducto()">
-              </div>
-              <!--9 cards de productos a desarrollar-->
-              <div class="contenedorCards" id="contenedorCards">
-                <div id="1" class="card" style="width: 18rem;">
-                    <img src="assets/img/anillo.JPG" class="card-img-top" alt="...">
-                      <div class="card-body">
-                        <h5 class="card-title">Anillo Amatista</h5>
-                        <p class="card-text" id="texto-card-anillo"></p>
-                        <a href="#" id="btnAnillo1" class="btn btn-primary">Comprar</a>
+            <!--Nuevas cards con Jquery y DOM-->
+            <div class="nuevosProductos" id="nuevos-productos">
+                <!--TItulo-->
+                <h3 class="nuevos">Joyas de la Tienda</h3>
+                <button id= "ver-productos" class="btnVer">Ver productos</button>
+              <div class="contenedorLista contenedorCards"> 
+                <!--Input para filtrar cards-->
+                <div class="input-filtrar">
+                 <div id="filtro">
+                    <!--acá poner titulo con dom, sino sacar este div-->
+                 </div>
+              
+                  <input type="text" name="" id="filtrar" class="filtrar" placeholder="¿Qué estás buscando?" onkeyup="buscarProducto()">
+                </div> <!--Cierre input Filtrar-->    
+
+                  <ul class="milista list-group list-group-horizontal">
+                    <!-- Aquí se generan las cards de los productos -->
+                  </ul>
+                </div> <!--Cierre contenedor de lista de cards-->
+             </div> <!--Cierre nuevos productos-->
+                      <!--Carrito Detalle--->
+                      <div class="row detalle">
+                        <h4>Detalle de tu compra</h4>
+                        <table class="table table-striped tablaDetalle" id="tabla-dom2">
+                            <thead>
+                                <tr>
+                                    <th class="columnaDetalle" scope="col">Código</th>
+                                    <th class="columnaDetalle" scope="col">Nombre</th>
+                                    <th class="columnaDetalle" scope="col">Precio</th>
+                                </tr>
+                            </thead>
+                            <tbody id="tabla-contenedora">
+                               <!--aqui la tabla--> 
+                            </tbody>
+                        </table>
                       </div>
-                </div>
-                <div id="2" class="card" style="width: 18rem;">
-                    <img src="assets/img/dijecuarzo.JPG" class="card-img-top" alt="...">
-                      <div class="card-body">
-                        <h5 class="card-title">Dije Cuarzo Rosa</h5>
-                        <p class="card-text" id="texto-card-rosa"></p>
-                        <a href="#" id="btnDije1" class="btn btn-primary">Comprar</a>
-                      </div>
-                </div>
-                <div class="card" style="width: 18rem;">
-                    <img src="assets/img/citrino.JPG" class="card-img-top" alt="...">
-                      <div class="card-body">
-                          <h5 class="card-title">Dije Citrino</h5>
-                          <p class="card-text" id="texto-card-citrino"></p>
-                          <a href="#" id="btnDije2"  class="btn btn-primary">Comprar</a>
-                     </div>
-                </div>
-                  <div class="card" style="width: 18rem;">
-                      <img src="assets/img/dijecorazon.JPG" class="card-img-top" alt="...">
-                        <div class="card-body">
-                          <h5 class="card-title">DIje corazón</h5>
-                          <p class="card-text" id="texto-card-corazon"></p>
-                          <a href="#" id="btnCorazon" class="btn btn-primary">Comprar</a>
-                        </div>
-                  </div>
-                  <div class="card" style="width: 18rem;">
-                      <img src="assets/img/dijebellota.JPG" class="card-img-top" alt="...">
-                        <div class="card-body">
-                          <h5 class="card-title">Dije Bellota</h5>
-                          <p class="card-text" id="texto-card-bellota"></p>
-                          <a href="#" id="btnBellota" class="btn btn-primary">Comprar</a>
-                        </div>
-                  </div>
-                  <div class="card" style="width: 18rem;">
-                      <img src="assets/img/dijegotaverde.JPG" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">Dije Gota</h5>
-                            <p class="card-text" id="texto-card-gotav"></p>
-                            <a href="#" id="btnGotav"  class="btn btn-primary">Comprar</a>
-                       </div>
-                  </div>
-                 
-            </div><!--Cierre contenedor Cards-->
-        </div><!--Cierre Contenedor General Tienda-->
-         <!--Nuevas cards con Jquery y DOM-->
-        <div class="nuevosProductos" id="nuevos-productos">
-          <!--Aca el titulo-->
-          <h3 class="nuevos">Nuevos ingresos!</h3>
-          <button id= "ver-productos" class="btnVer">Ver ingresos</button>
-        </div>
-          <div class="contenedorLista">   
-              <ul class="milista list-group list-group-horizontal">
-                <!-- aca van las cardsd de los productos -->
-              </ul>
-          </div>
-          <!--Carrito Viejo--->
-          <div class="detalle">
-            <h4>Detalle de tu compra</h4>
-            <table class="table table-striped tablaDetalle" id="tabla-dom2">
-                <thead>
-                    <tr>
-                        <th class="columnaDetalle" scope="col">Código</th>
-                        <th class="columnaDetalle" scope="col">Nombre</th>
-                        <th class="columnaDetalle" scope="col">Precio</th>
-                    </tr>
-                </thead>
-                <tbody id="tabla-contenedora">
-                    
-                </tbody>
-            </table>
-        </div>
+            </div><!--Cierre Contenedor General Tienda-->
+
            <!--Suma total de compra-->
         <div class="sumaCompra" id="totalCompra">
           <strong class="strongTotal">Total de compra</strong>
@@ -162,18 +111,17 @@
           </div>
       </div>
       <div class="col-md-3 col-lg-2">
-          <h3>Redes Sociales</h3>
+          <h3 class="redesSociales">Redes Sociales</h3>
           <div class="footer-social">
                 <a class="a-social-link" href="https://www.instagram.com/dimorphoteka/"><img class="logo-footer" src="assets/icons/logoig.png" alt="logo Instagram"></a>
                 <a class="a-social-link" href="#"> <img class="logo-footer" src="assets/icons/logomail.png" alt="logo mail"></a>
-          </div>
-          <div class="contenedorLogo">
+                <a class="a-social-link" href="#"> <img class="logo-footer" src="assets/icons/logomail.png" alt="logo mail"></a>
                 <img class= "logo-di-footer" src="assets/icons/logosinfondo.png" alt="Logo">
           </div>
       </div>
       <div class="col-md-3 col-lg-3">
           <div class="footer-contact">
-              <h3>También podes contactarnos</h3>
+              <h3 class="redesSociales">También podes contactarnos</h3>
               <p class="textoFooter">Escribinos: tienda.dimorphoteka@gmail.com</p>
           </div>
       </div>

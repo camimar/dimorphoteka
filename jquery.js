@@ -8,6 +8,12 @@ const productosTienda = [
    {id: "arosB", foto: "'assets/img/arosboti.jpg'", nombre: "Aros Botticelli", piedra: "no", material: "Acero dorado", detalle: "Aros tipo chapon colgante en <br>forma de Ostra. Acero dorado", precio: 790},
    {id: "cuarzoR", foto: "'assets/img/cuarzorolado.jpeg'", nombre: "Cuarzo Rosa Rolado", piedra: "Cuarzo Rosa", material: "no", detalle: "Cristales de cuarzo rosa rolado. <br> Precio por unidad", precio: 180},
    {id: "anilloVer", foto: "'assets/img/anilloverde.jpeg'", nombre: "Anillo Cuarzo Verde", piedra: "Cuarzo Verde", material: "Alpaca", detalle: "Anillo artesanal regulable, <br> con piedra de dos puntas", precio: 900}, 
+   {id: "anilloAma", foto: "'assets/img/anillo.JPG'", nombre: "Anillo Amatista", piedra: "Amatista", material: "Alpaca", precio: 900},
+   {id: "dijeRosa", foto: "'assets/img/dijecuarzo.JPG'",nombre: "Dije Cuarzo Rosa", piedra: "Cuarzo Rosa", material: "Alpaca", precio: 2800},
+   {id: "dijeCitri", foto: "'assets/img/citrino.JPG'", nombre: "Dije Citrino", piedra: "Cuarzo Citrino", material: "Alpaca", precio: 1600},
+   {id: "dijeCora", foto: "'assets/img/dijecorazon.JPG'", nombre: "Dije Corazón", piedra: "Cuarzo Rosa", material: "Baño de plata", precio: 600},
+   {id: "dijeBello", foto: "'assets/img/dijebellota.JPG'", nombre: "Dije Bellota", piedra: "Cuarzo Citrino y Pirita", material: "Alpaca", precio: 1000},
+   {id: "dijeGota", foto: "'assets/img/dijegotaverde.JPG'", nombre: "Dije Gota", piedra: "Cuarzo Verde", material: "Baño de plata", precio: 700},
    
    ]
 
@@ -15,7 +21,7 @@ const productosTienda = [
 for (const prod of productosTienda) {
    $(".milista").append(`<li class="list-group-item">
                      <img src=${prod.foto} width="250" height="306"></img>
-                     <h4> ${prod.nombre}</h4>
+                     <h4 class="titulo-card"> ${prod.nombre}</h4>
                      <p> Piedra: ${prod.piedra}</p>
                      <p> Material: ${prod.material}</p>
                      <p class="texto-detalle"> ${prod.detalle} </p>
@@ -29,6 +35,29 @@ for (const prod of productosTienda) {
                         
 }
 
+//Funcion para filtrar busquedas en la tienda
+
+function buscarProducto () {
+   //DOM 
+   const input = document.getElementById("filtrar").value.toUpperCase();
+   //console.log(input);
+   const cardContainer = document.getElementById("contenedorCards")
+   console.log(cardContainer);
+
+   const cards = cardContainer.getElementsByClassName("list-group-item");
+   console.log(cards);
+
+   for(let i = 0; i < cards.length; i++) {
+      let title = cards[i].querySelector(".list-group-item h4.titulo-card");
+      console.log(title);
+
+         if(title.innerText.toUpperCase().indexOf(input) > -1) {
+            cards[i].style.display = "";
+         } else {
+            cards[i].style.display = "none";
+         }
+   }
+}
 
 let productosCarrito = [];
 
@@ -148,3 +177,5 @@ $(function () {
                   });
                               
       });
+
+  

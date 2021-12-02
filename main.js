@@ -4,41 +4,6 @@ const saludoUsuario = document.getElementById("nombre-visitante");
 const nombreLS = localStorage.getItem('nombreVisitante');
 saludoUsuario.innerText = nombreLS;
 
-//Array de objetos en stock
-
-const productosEnStock = [
-   {id: "anilloAma", nombre: "Anillo Amatista", piedra: "Amatista", material: "Alpaca", precio: 900},
-   {id: "dijeRosa", nombre: "Dije Cuarzo Rosa", piedra: "Cuarzo Rosa", material: "Alpaca", precio: 2800},
-   {id: "dijeCitri", nombre: "Dije Citrino", piedra: "Cuarzo Citrino", material: "Alpaca", precio: 1600},
-   {id: "dijeCora", nombre: "Dije Corazón", piedra: "Cuarzo Rosa", material: "Baño de plata", precio: 600},
-   {id: "dijeBello", nombre: "Dije Bellota", piedra: "Cuarzo Citrino y Pirita", material: "Alpaca", precio: 1000},
-   {id: "dijeGota", nombre: "Dije Gota", piedra: "Cuarzo Verde", material: "Baño de plata", precio: 700},
- ]
-
-//Funcion para filtrar busquedas en la tienda
-
-function buscarProducto () {
-   //DOM 
-   const input = document.getElementById("filtrar").value.toUpperCase();
-   //console.log(input);
-   const cardContainer = document.getElementById("contenedorCards")
-   console.log(cardContainer);
-
-   const cards = cardContainer.getElementsByClassName("card");
-   console.log(cards);
-
-   for(let i = 0; i < cards.length; i++) {
-      let title = cards[i].querySelector(".card-body h5.card-title");
-      console.log(title);
-
-         if(title.innerText.toUpperCase().indexOf(input) > -1) {
-            cards[i].style.display = "";
-         } else {
-            cards[i].style.display = "none";
-         }
-   }
-}
-
 //Array productos descuento para tabla
 
 const productosDescuento = [

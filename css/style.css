@@ -14,10 +14,12 @@ h2 {text-align: center;
      color: salmon;
 }
 .saludo {
-    font-size: 40px;
-    color: coral;
-    text-align: center;
+    font-size: 15px;
+    font-family: 'Courgette', cursive;
+    color: #f0bde3;
+    opacity: 0.4;
 }
+
 .headerNav {
     z-index: 1;
     background-color: rosybrown;
@@ -119,11 +121,11 @@ li > a:hover::after, li > a.active-nav::after {
     padding-top: 20px;
     margin: 25px 45px; 
     border-radius: 50px;
-    /*background: #dbc1d5;*/
     box-shadow:  26px 26px 52px #867682,
                  -26px -26px 52px #ffffff;}
 .saludo {
     margin: 0 5px;
+    font-size: 45px;
     font-family: 'Courgette', cursive;
     color: #f0bde3;
     opacity: 0.4;
@@ -267,7 +269,8 @@ li > a:hover::after, li > a.active-nav::after {
     }
 } acá la media querie del carrito*/
 .cart-content{
-   
+   /**/
+   padding:10px;
 }
 .close-cart {
     font-size: 1.7rem;
@@ -459,6 +462,7 @@ li > a:hover::after, li > a.active-nav::after {
     font-size: 14px;
     padding: 10px;
     width: 100%;
+    margin-bottom: 15px;
 }
 .form-control input:focus {
     outline: 0;
@@ -471,6 +475,7 @@ li > a:hover::after, li > a.active-nav::after {
 
 .form-control.error input {
     border-color: red;
+    padding-top: 15px;
 }
 
 .form-control i {
@@ -519,7 +524,7 @@ li > a:hover::after, li > a.active-nav::after {
 /*Vista Mobile*/
 @media only screen and (max-width: 767px) {
 
-/*NavBar*/
+/*NavBar Mobile*/
 .contenedorNav {
   width: 100%;
 }
@@ -538,6 +543,7 @@ li > a:hover::after, li > a.active-nav::after {
     margin-top: 1rem; 
 }
 .menuIcon {
+    margin-right: 10px;
     display: flex;
     cursor: pointer;
     justify-content: flex-end; 
@@ -563,66 +569,225 @@ li > a:hover::after, li > a.active-nav::after {
     padding: 0.5rem 1rem;
     transition: all 0.4s; 
 }
+.logoCarrito {
+    width: 45px;
+    margin-left: 20px;
 
-/*Carousel*/
-.carousel {
-    width: 20em;
 }
-/*Footer*/
-.pie {
-    width: 90%;
-    padding: 10px 0;
-    margin-top: 5px;
-    background-color: mistyrose;
-    flex-flow: flex wrap; 
-}
-.textoFooter {
-    font-size: 20px;
-    font-weight: 500; 
-}
-.footer-social {
-    width: 100%;
+/*Index Tienda Mobile*/
+.espacio-banner-saludo{
+    background-image: url("../assets/img/fotobanner.JPG");
     display: flex;
-    flex-direction: row;
     justify-content: center;
-    padding-top: 5px; 
+    padding-bottom: 5px;
+    padding-top: 10px;
+    margin: 10px 15px; 
+    border-radius: 50px;
+    box-shadow:  5px 5px 10px #867682,
+                 -5px -5px 10px #ffffff;}
+.titulo {
+    color: #d4acca;
+    margin: 0 auto;
+    font-weight: 700;
+    font: italic bold 43px Georgia, Serif;
+    text-shadow: -3px 3px 0  #6b5a67, -6px 4px 0  #834a88;
+    text-align: center;
+      }
+
+.saludo {
+    margin: 0 5px;
+    font-family: 'Courgette', cursive;
+    color: #f0bde3;
+    opacity: 0.5;
 }
-.footer-links {
+.titulo2 {
+    text-align: center;
+    font-size: 22px;
+    margin-top: 14px;
+    color: #4a3a5e;
+    text-decoration: underline #661f29;
+}
+.descuento {
+    text-align: justify;
+    padding: 15px 0;
+    font-size: 15px;
+    color: lavander;
+    text-align: center;
+}
+.btnMostrar {
+    text-align: center;
+    color: #661f29;
+    font-size: 15px;
+    border-radius: 20px;
+    background: linear-gradient(145deg, #d8cfea, #b6aec5);
+    box-shadow:  5px 5px 8px #9a93a6,
+             -5px -5px 8px #faefff;
+   
+    margin: 0 110px 20px 110px;
+}
+.divCierre {
     display: flex;
     flex-direction: column;
-    padding-left: 7px; 
 }
-.contenedorLogo {
+.tablaDescuento {
+    font-size: 12px;
+    padding: 3px;
+    margin: 0 15px;
+    border-radius: 35px;
+    background: linear-gradient(145deg, #d8cfea, #b6aec5);
+    box-shadow:  6px 6px 4px #7b7686,
+             -6px -6px 4px #ffffff;
+}
+.input-filtrar{
     display: flex;
-    justify-content: center; 
+    margin-top: 20px;
+    margin-bottom: 10px;
+    justify-content: center;
+    
 }
-.logo-di-footer {
-    padding-top: 15px;
-    width: 30%; 
+.filtrar{
+    margin-top: 15px;
+    font-size: 15px;
+    text-align: center;
 }
-.footer-about {
-    margin: 5px 10px;
+.nuevos {
+    color: lavender;
+    font: italic bold 25px Georgia, Serif;
+    text-shadow: -1px 2px 0  #636FA4, -2px 3px 0  #661f29;
 }
-.logo-footer {
-    padding-top: 10px;
+.btnVer {
+    text-align: center;
+    color: #661f29;
+    font-size: 25px;
+    padding: 10px 20px;
+    border-radius: 35px;
+    background: linear-gradient(145deg, #d8cfea, #b6aec5);
+    box-shadow:  5px 5px 10px #9a93a6,
+             -5px -5px 10px #faefff;
+   
+    margin: 20px 90px;}
+/*veeeeeeeeeer que onda con eso corrido de las cards en mobile*/
+.milista{
+    padding-left: 0px;
+    margin-left: 0px;
+}
+.list-group-item {
+    margin-left: 0;
+    padding-left: 0;
+}
+/*Blog mobile*/
+.divBlog {
+    background-color: rgb(158, 139, 139);
     padding-bottom: 10px;
-    width: 45%;
-    transition: all 0.5s; 
 }
-.logo-footer:hover {
-    transform: rotate(60deg); 
+.tituloBlog{
+    padding-top: 16px;
+    color: lavender;
+    text-align: center;
+    font: italic bold 30px Georgia, Serif;
+    text-shadow: -1px 3px 0  #636FA4, -3px 5px 0  #661f29;
 }
-.a-social-link {
-    text-align: center; 
+
+.subtituloBlog{
+    text-align: center;
+    font: italic bold 22px Georgia, Serif;
+    color: lavender;
 }
-.menu-footer {
-    color: #000d1a;
-    font-size: 20px;
+.piedras {
+    margin: 20px 30px;
+    border: solid lavender 8px!important;
+}
+
+/*Carousel Mobile*/
+.carousel {
+    width: 25em;
+}
+/*Formulario registro mobile*/
+.container {
+    margin-left: 10px;
+    background-color: #eee;
+    border-radius: 7px;
+    box-shadow: 0 2px 5px rgb(0, 0, 0, 0.3);
+    overflow: hidden;
+    width: 330px;
+    max-width: 100%;
+    margin-bottom: 30px;
+}
+.regi {
+    margin: 0 0 0 25px;
+    font-style: italic;
+    font-size: 28px;
+    letter-spacing: 1px;
+    color:salmon; 
+}
+.registrate {
+    font-size: 25px;
+    text-align: center;
+    color:rosybrown; 
+    font-style: italic;
+    text-shadow: -1px 2px 0  #636FA4, -1px 3px 0  #661f29;
+}
+/*Footer MOBILE*/
+
+ .pie{
+    padding: 10px 0; 
+    margin-top: 5px; 
+    background-color: mistyrose; 
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    }
+ .textoFooter{
+    font-size: 16px; 
+    font-weight: 500;
+ }
+ .footer-social{
+     width: 55%; 
+     display: flex;
+     flex-direction: row;
+     padding-bottom: 20px;
+     padding-left: 40px;
+    }
+.redesSociales {
+    font-size: 22px;
+    text-align: center;
+    margin-top: 15px;
+    padding-top: 5px;
+    border-top: 2px solid sandybrown;;
+}
+ .footer-links{
+     padding-left: 7px;
+    }
+ .logo-di-footer{
+     display: none;
+    }
+ .footer-about{
+     margin: 5px 10px;
+     text-align: center;
+ }
+ .logo-footer{
+    width: 65%;
+}
+.footer-contact{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+ .a-social-link{
+     justify-content: center;
+     text-align: center;
+    }
+ .menu-footer{
+    color: black;
+    font-size: 18px;
     font-weight: 600;
-    line-height: 10px; 
+    line-height: 10px;
+    text-align: center;
 }
-.borde-mobile {
-    padding-bottom: 10px;
-    border-bottom: 6px solid rosybrown; 
-}
+ .borde-mobile{
+     padding-bottom: 10px;
+    border-bottom: 6px solid sandybrown;
+    }
+ 
 }/*Cierre Vista Mobile*/

@@ -14,7 +14,6 @@ form.addEventListener('submit', e => {
 });
 
 // Funciones para chequear los campos completados
-
 function checkInputs() {
 	//aca debo tomar los valores de los inputs y uso trim para los espacios en blanco
 	const nombreUsuarioValue = nombreUsuario.value.trim();
@@ -51,6 +50,7 @@ function checkInputs() {
 	} else{
 		setSuccessFor(contrasenia2);
 	}
+	
 }
 
 // Funciones de errores y bien completados
@@ -71,13 +71,13 @@ function setSuccessFor(input) {
 //funcion para validar mail 
 
 function validarMail(email) {
-    //expresión regular, aún no se usarla, busqué cómo
+    //expresión regular
 	return /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/.test(email);
 }
 
 // guardar datos formulario en LS
 
-  function guardarLS(){
+  function guardarLS(datosUsuario){
 
 	 var inputNombre= document.getElementById("nombreUsuario");
 	 localStorage.setItem("nombreUsuario", inputNombre.value);
@@ -87,5 +87,63 @@ function validarMail(email) {
 	 
 	 var inputContra= document.getElementById("contrasenia");
 	 localStorage.setItem("contrasenia", inputContra.value);
+
+	
     }
 
+ //alert de exito y redireccionamiento del registro cuando es exitoso
+
+	let botonEntrar = document.getElementbyId("botonEntrada");
+	botonEntrar.addEventListener("click", function() {
+	
+	Swal.fire({
+	   icon: "success",
+	   title: "¡Cuenta registrada con éxito!",
+	   timer: 2000,
+	   showConfirmButton: false,
+   });
+
+   setTimeout(function() {
+	   window.location.href = "index.html";
+   }, 1900);
+
+   //console.log(datosUsuario);
+});
+
+// Luego del Registro, iniciar sesión 
+
+//Boton para el ingreso 
+/*
+botonEntrar.addEventListener("click", validarIngreso);
+
+function validarIngreso(e) {
+    let usernameIngresado = username.value;
+    let passwordIngresado = password.value;
+
+    let usernameCreado = localStorage.getItem("username");
+    let passwordCreado = localStorage.getItem("password");
+
+    if (
+        usernameIngresado === usernameCreado &&
+        passwordIngresado === passwordCreado
+    ) {
+        e.preventDefault();
+
+        Swal.fire({
+            icon: "success",
+            title: "¡Sesión iniciada correctamente!",
+            showConfirmButton: false,
+        });
+
+        setTimeout(function() {
+            window.location.href = "../pages/productos.html";
+        }, 1900);
+    } else {
+        e.preventDefault();
+        contenedorError.innerHTML =
+            "<b class='error' style='color:red;'>* ¡Ingresaste un nombre de usuario o contraseña incorrecto, inténtalo de nuevo!</b>";
+        document
+            .getElementById("contenedor-formulario")
+            .appendChild(contenedorError);
+    }
+}*/
