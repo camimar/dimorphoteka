@@ -117,15 +117,14 @@ li > a:hover::after, li > a.active-nav::after {
     background-image: url("../assets/img/fotobanner.JPG");
     display: flex;
     justify-content: center;
-    padding-bottom: 50px;
-    padding-top: 20px;
-    margin: 25px 45px; 
+    padding: 20px 0;
+    margin: 15px 45px; 
     border-radius: 50px;
     box-shadow:  26px 26px 52px #867682,
                  -26px -26px 52px #ffffff;}
 .saludo {
     margin: 0 5px;
-    font-size: 45px;
+    font-size: 60px;
     font-family: 'Courgette', cursive;
     color: #f0bde3;
     opacity: 0.4;
@@ -136,7 +135,6 @@ li > a:hover::after, li > a.active-nav::after {
     padding: 30px 0; 
 }
 .titulo {
-    /*font-family: 'Courgette', cursive;*/
     font-size: 60px;
     color: lavenderblush;
     margin: 0 auto;
@@ -144,7 +142,6 @@ li > a:hover::after, li > a.active-nav::after {
     font: italic bold 100px Georgia, Serif;
     text-shadow: -4px 3px 0  #ff745b, -14px 7px 0  #661f29;
       }
-}
 
 
 .titulo2 {
@@ -518,7 +515,7 @@ li > a:hover::after, li > a.active-nav::after {
     margin-top: 20px;
     width: 100%;
 }
-
+}
 /*Cierre vista Desktop*/
 
 /*Vista Mobile*/
@@ -598,6 +595,7 @@ li > a:hover::after, li > a.active-nav::after {
     margin: 0 5px;
     font-family: 'Courgette', cursive;
     color: #f0bde3;
+    
     opacity: 0.5;
 }
 .titulo2 {
