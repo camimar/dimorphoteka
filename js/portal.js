@@ -1,3 +1,20 @@
+//Ingreso 
+let ingresar = document.getElementById("boton-entrar");
+ingresar.addEventListener("click", function() {
+	
+	Swal.fire({
+	   icon: "success",
+	   title: "Ingreso correcto. Se redirigirá a la Tienda",
+	   timer: 2000,
+	   showConfirmButton: false,
+   });
+
+   setTimeout(function() {
+	  location.href = "index.html";
+    2900});
+})
+
+/*
 //animacion fade para boton inicio
 
 $(".btn-portal").fadeOut().hide("slow", function(){
@@ -23,4 +40,4 @@ function guardarNombre() {
 function abrirNuevaPagina (){
     location.href = "index.html";
 }
-
+*/

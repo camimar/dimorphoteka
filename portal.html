@@ -11,46 +11,34 @@
     <link rel="stylesheet" href="css/portal.css" type="text/css">
 </head>
 <body>
-    <!--
-    <div class="contenedor-input">
-        <p class="comoEsNombre">¿Cómo es tu nombre?</p>
-        <input type="text" class="input-nombre" id="nombreVisitante" value=""/>
-    </div>
-    <div class="contenedor-btn">
-    <button id="ingreso" class="btn-portal" onclick="abrirNuevaPagina () ">Ingresa a Dimorphoteka</button>
-    </div>-->
- <!--Campos para ingresar-->
 
- <div class="container">
-    <div class="container-fluid contenedor-registro" id="contenedor-formulario">
-        <form class="container-form titulo" id="formulario">
-            <h2 class="ingresar">Ingreso</h2>
-            <div class="form col-lg-5">
-                <div class="form-group"><!--class antes llamada form-group-->
-                    <label class="label-form" for="">Nombre de Usuario</label>
-                    <input class="form-input" type="text" id="username" value="" />
-                </div>
-                <div class="form-group">
-                    <label class="label-form" for="">Contraseña</label>
-                    <input class="form-input" type="password" id="password" value="" />
-                </div>
+      <form class="container-form titulo" id="formulario">
+            <div class="form col-md-2 col-lg-5">
+                <h2 class="ingresar">Ingreso</h2>
+                    <div class="form-group"><!--class antes llamada form-group-->
+                        <label class="label-form" for="">Nombre de Usuario</label>
+                        <input class="form-input" type="text" id="username" value="" />
+                    </div>
+                    <div class="form-group">
+                        <label class="label-form" for="">Contraseña</label>
+                        <input class="form-input" type="password" id="password" value="" />
+                    </div>
            
-            <input class="boton-entrar" id="boton-entrar" type="submit" value="Ingresar" /><br>
-            <a class="iniciar-sesion" id="enlace-iniciar-sesion" href="registro.html">Si no tenes cuenta, registrate aca</a
-      >
-    </div>
-    </form>
-  </div>
-</div>
+                <input class="boton-entrar" id="boton-entrar" type="submit" value="Ingresar" /><br>
+                <a class="iniciar-sesion" id="enlace-iniciar-sesion" href="registro.html">Si no tenes cuenta, registrate aca</a>
+             </div>
+        </form>
 
-<!-- cierre contenido -->
+           <!--Mi Script-->
 
-    <!--Jquery CDN-->
-    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
     <script src="js/portal.js"></script>
+    <!-- Sweet Alert -->
+        <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <!--Jquery CDN-->
+        <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+        
     <!--Bundle Script Bootstrap-->
-    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script> 
-    
-</body>
+        <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script> 
+    </body>
 </html>

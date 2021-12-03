@@ -1,9 +1,23 @@
-//Saludo inicial en portal y trasladando dato a otro html
+//Menu Hamburguesa responsive
+jQuery ('document').ready(function($){
 
-const saludoUsuario = document.getElementById("nombre-visitante");
-const nombreLS = localStorage.getItem('nombreVisitante');
-saludoUsuario.innerText = nombreLS;
-
+   var menuBtn = $('.menuIcon'),
+      menu = $('.navigation ul');
+  
+   menuBtn.click(function() {
+  
+      if( menu.hasClass('show') ) {
+  
+      menu.removeClass('show');
+  
+      } else {
+  
+      menu.addClass ('show');
+      }
+  
+      });
+  
+  });
 //Array productos descuento para tabla
 
 const productosDescuento = [
@@ -20,19 +34,16 @@ let tablaBody = document.createElement("tbody");
 
 for (const producto of productosDescuento) {
 
-//Fila tr y luego celdas td
+   //Fila tr y luego celdas td
 
-let fila = document.createElement("tr");
-
-fila.innerHTML = 
-   `<td> ${producto.nombre}</td>
-   <td> ${producto.piedra}</td>
-   <td> ${producto.material}</td>
-   <td><del>${producto.precioAntes}</del></td>
-   <td><strong> $ ${producto.precioActual}</strong></td>`
-
-tablaBody.appendChild(fila);
-
+      let fila = document.createElement("tr");
+      fila.innerHTML = 
+         `<td> ${producto.nombre}</td>
+         <td> ${producto.piedra}</td>
+         <td> ${producto.material}</td>
+         <td><del>${producto.precioAntes}</del></td>
+         <td><strong> $ ${producto.precioActual}</strong></td>`
+      tablaBody.appendChild(fila);
 }
 
 tabla.appendChild(tablaBody); 
@@ -52,11 +63,9 @@ jQuery(function () {
          $("#tabla-dom").show();
          $("#btn-mostrar-ocultar").text("Ocultar");
    
-   }
-   
-   })
-   
-   })
+         }
+})
+})
 
 //Animación fade de la tabla de descuentos 
 
@@ -69,7 +78,6 @@ $("#btn-mostrar-ocultar").on("click", function() {
 //Animacion slide cards de productos - se activa con boton ver ingresos
 
 $(".contenedorLista").fadeOut().hide()
-
 $("#ver-productos").on('click', function() {
 	$(".contenedorLista").slideToggle(1000);
 });
@@ -81,3 +89,4 @@ let scroll = document.getElementById("iconoCarrito");
 scroll.addEventListener("click", (e) => {
 	document.documentElement.scrollTo(0, 9000)
 });
+

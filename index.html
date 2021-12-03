@@ -6,19 +6,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tienda Dimorphoteka</title>
     <!--Bootstrap-->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
-    <style>@import url('https://fonts.googleapis.com/css2?family=Courgette&display=swap');</style>
-      <!--Jquery para NavBar-->
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+      <style>@import url('https://fonts.googleapis.com/css2?family=Courgette&display=swap');</style>
+    <!--Jquery para NavBar-->
       <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
     <!--Mi css-->
-    <link rel="stylesheet" href="css/style.css" type="text/css">
+      <link rel="stylesheet" href="css/style.css" type="text/css">
 </head>
 <body>
    <!--Intento NavBar fixed-->
       <header class="headerNav">
         <div class="contenedorNav logo-nav-container">
-            <img class= "logoDimorphoteka" src="assets/icons/logosinfondo.png" width="90" alt="Logo">
-            <span class="menuIcon"><img class="menuHam" src="assets/icons/menuHam.png" alt="logomenu" width="10%"></span>
+              <img class= "logoDimorphoteka" src="assets/icons/logosinfondo.png" width="90" alt="Logo">
+              <span class="menuIcon"><img class="menuHam" src="assets/icons/menuHam.png" alt="logomenu" width="10%"></span>
             <nav class="navigation">
               <ul>
                     <li><a href="portal.html">Inicio</a></li>
@@ -28,123 +28,103 @@
                     <li><a href="#">Contacto</a></li>
               </ul>
             </nav>
-            <a href="#" class="carritoIcon" id="iconoCarrito"><img class="logoCarrito" src="assets/icons/logocarrito.png" alt="logocarrito" width="8%"></a>
+             <a href="#" class="carritoIcon" id="iconoCarrito"><img class="logoCarrito" src="assets/icons/logocarrito.png" alt="logocarrito" width="8%"></a>
         </div>
       </header>          
       <main>
-        <div class="tienda">
-          <!--Saludo-->
-          <div class="espacio-banner-saludo">
-              <p class="saludo" id="nombre-visitante"></p><p class="saludo">Dimorphoteka</p>
-          </div>
-            <h1 class="titulo">Tienda Virtual</h1>
-            <div class="divCierre"><!--Row titulos / categorías-->
-              <h2 class="titulo2">Joyas en Descuento!</h2>
-                <p class="descuento">Podes ver nuestros descuentos haciendo click en el botón de abajo</p>
-                <button id= "btn-mostrar-ocultar" class="btnMostrar">Ocultar</button>
+          <!--Inicio de pagina Tienda-->
+          <div class="tienda">
+            <!--Titulo cambiar classes -->
+            <div class="espacio-banner-saludo">
+                <p class="saludo" id="nombre-visitante"></p><p class="saludo">Dimorphoteka</p>
             </div>
-            <!--Tabla descuentos DOM-->
-            <div id="tabla-dom" class="tablaDescuento">
-              <!--aqui se genera la tabla-->  
-            </div>
-          </div>
-          <!--Contenedor General Tienda-->
-          <div>
-            <!--Nuevas cards con Jquery y DOM-->
-            <div class="nuevosProductos" id="nuevos-productos">
-                <!--TItulo-->
-                <h3 class="nuevos">Joyas de la Tienda</h3>
-                <button id= "ver-productos" class="btnVer">Ver productos</button>
-              <div class="contenedorLista contenedorCards"> 
-                <!--Input para filtrar cards-->
-                <div class="input-filtrar">
-                 <div id="filtro">
-                    <!--acá poner titulo con dom, sino sacar este div-->
-                 </div>
-              
-                  <input type="text" name="" id="filtrar" class="filtrar" placeholder="¿Qué estás buscando?" onkeyup="buscarProducto()">
-                </div> <!--Cierre input Filtrar-->    
-
-                  <ul class="milista list-group list-group-horizontal">
-                    <!-- Aquí se generan las cards de los productos -->
-                  </ul>
-                </div> <!--Cierre contenedor de lista de cards-->
-             </div> <!--Cierre nuevos productos-->
-                      <!--Carrito Detalle-
-                      <div class="row detalle">
-                        <h4>Detalle de tu compra</h4>
-                        <table class="table table-striped tablaDetalle" id="tabla-dom2">
-                            <thead>
-                                <tr>
-                                    <th class="columnaDetalle" scope="col">Código</th>
-                                    <th class="columnaDetalle" scope="col">Foto</th>
-                                    <th class="columnaDetalle" scope="col">Nombre</th>
-                                    <th class="columnaDetalle" scope="col">Precio</th>
-                                </tr>
-                            </thead>
-                            <tbody id="tabla-contenedora">
-                               aqui la tabla
-                            </tbody>
-                        </table>
-                      </div>-->
-            </div><!--Cierre Contenedor General Tienda-->
-
-           <!--Suma total de compra
-        <div class="sumaCompra" id="totalCompra">
-          <strong class="strongTotal">Total de compra</strong>
-      </div>-->
-     
-      <section class="shopping-cart">
-        <div class="container-fluid" style="overflow-x: hidden;">
-            <h1 class="text-center">CARRITO</h1>
-            <hr>
-            <div class="row">
-                <div class="col-6 col-xs-6" >
-                    <div class="shopping-cart-header">
-                        <h6>Producto</h6>
-                    </div>
-                </div>
-                <div class="col-2 col-xs-2">
-                    <div class="shopping-cart-header">
-                        <h6 class="text-truncate">Precio</h6>
-                    </div>
-                </div>
-                <div class="col-4 col-xs-4">
-                    <div class="shopping-cart-header">
-                        <h6>Cantidad</h6>
-                    </div>
+              <h1 class="titulo">Tienda Virtual</h1>
+              <div class="divCierre"><!--Row titulos / categorías-->
+                <h2 class="titulo2">Joyas en Descuento!</h2>
+                  <p class="descuento">Podes ver nuestros descuentos haciendo click en el botón de abajo</p>
+                  <button id= "btn-mostrar-ocultar" class="btnMostrar">Ocultar</button>
+              </div>
+              <!--Tabla descuentos DOM-->
+                <div id="tabla-dom" class="tablaDescuento">
+                  
                 </div>
             </div>
+            <!--Contenedor General Tienda-->
+            <div>
+                  <!--Nuevas cards con Jquery y DOM-->
+                  <div class="nuevosProductos" id="nuevos-productos">
+                  
+                    <h3 class="nuevos">Joyas de la Tienda</h3>
+                    <button id= "ver-productos" class="btnVer">Ver productos</button>
+                    <div class="contenedorLista contenedorCards"> 
+                      <!--Input para filtrar cards-->
+                      <div class="input-filtrar">
+                        <div id="filtro">
+                          <!--acá poner titulo con dom, sino sacar este div-->
+                        </div>
+                
+                      <input type="text" name="" id="filtrar" class="filtrar" placeholder="¿Qué estás buscando?" onkeyup="buscarProducto()">
+                    </div>   
 
+                    <ul class="milista list-group list-group-horizontal">
+                      <!-- Aquí se generan las cards de los productos -->
+                    </ul>
+                  </div> <!--Cierre de lista de cards-->
+              </div> <!--Cierre nuevos productos-->
+                      
+          </div><!--Cierre Contenedor General Tienda-->
 
-      <div class="shopping-cart-items shoppingCartItemsContainer">
-      </div>
-       <!-- START TOTAL -->
-       <div class="row">
-        <div class="col-12">
-            <div class="shopping-cart-total d-flex align-items-center">
-                <p class="mb-0">Total</p>
-                <p class="ml-4 mb-0 shoppingCartTotal">$0</p>
-                <div class="toast ml-auto bg-info" role="alert" aria-live="assertive" aria-atomic="true"
-                    data-delay="2000">
-                    <div class="toast-header">
-                        <span>✅</span>
-                        <strong class="mr-auto ml-1 text-secondary">Elemento en el carrito</strong>
-                        <button type="button" class="ml-2 mb-1 close" data-dismiss="toast" aria-label="Close">
-                            <span aria-hidden="true">&times;</span>
-                        </button>
+          <!--Estructura de columnas para el carrito-->
+        <section class="shopping-cart tabla-detalle">
+              <div class="container-fluid" style="overflow-x: hidden;">
+                    <h1 class="text-center">CARRITO</h1>
+                    <hr>
+                  <div class="row">
+                    <div class="col-6 col-xs-6" >
+                        <div class="shopping-cart-header">
+                            <h6>Producto</h6>
+                        </div>
                     </div>
-                    
+                    <div class="col-2 col-xs-2">
+                        <div class="shopping-cart-header">
+                            <h6 class="text-truncate">Precio</h6>
+                        </div>
+                    </div>
+                    <div class="col-4 col-xs-4">
+                        <div class="shopping-cart-header">
+                            <h6>Cantidad</h6>
+                        </div>
+                    </div>
+                  </div> <!--Cierre row-->
+
+                <div class="shopping-cart-items shoppingCartItemsContainer">
+                  <!--acá van las filas creadas dinamicamente con el DOM-->
                 </div>
-                <button class="btn btn-success ml-auto comprarButton" type="button" data-toggle="modal"
-                    data-target="#comprarModal">Comprar</button>
-            </div>
-        </div>
-    </div>
 
-    <!-- END TOTAL -->
-
-   </main>
+                  <!-- Detalle de compra -->
+                  <div class="row">
+                    <div class="col-12">
+                        <div class="totalCarrito d-flex align-items-center">
+                            <p class="mb-0">Total</p>
+                            <p class="ml-4 mb-0 shoppingCartTotal">$0</p>
+                            <div class="toast ml-auto bg-info" role="alert" aria-live="assertive" aria-atomic="true"
+                                data-delay="2000">
+                                <div class="toast-header">
+                                    <span>✅</span>
+                                    <strong class="mr-auto ml-1 text-secondary">Elemento en el carrito</strong>
+                                    <button type="button" class="ml-2 mb-1 close" data-dismiss="toast" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                            </div>
+                            <button class="btn btn-success ml-auto comprarButton" type="button" data-toggle="modal"
+                                data-target="#comprarModal">Comprar</button>
+                        </div>
+                    </div>
+                  </div>
+                </div>
+          </section>
+      </main>
    <!--Footer-->
    <footer class="pie">
       <div class="col-md-3 col-lg-3">
@@ -181,19 +161,18 @@
 
 
     <!--Jquery CDN-->
-    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+        <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
     <!-- Sweet Alert -->
-    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-     <!--Mis Script Js-->
-     <script src="main.js"></script>
-     <script src="js/navBar.js"></script>
-     <script src="jquery.js"></script>
- 
+        <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <!--Mis Script Js-->
+        <script src="main.js"></script>
+        <script src="js/navBar.js"></script>
+        <script src="jquery.js"></script>
     <!--Bundle Script Bootstrap-->
-    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script> 
+        <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script> 
     <!--Script fontawesome por icons-->
-    <script src="https://kit.fontawesome.com/1ad82abe42.js" crossorigin="anonymous"></script>
+        <script src="https://kit.fontawesome.com/1ad82abe42.js" crossorigin="anonymous"></script>
     
 </body>
 </html>

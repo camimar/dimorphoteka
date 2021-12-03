@@ -90,28 +90,6 @@ li > a:hover::after, li > a.active-nav::after {
     width: 100%;
     background: #000d1a; 
 }
-/*Carrito
-.cart {
-    position: absolute;
-    min-height: 10rem;
-    background: var(--mainWhite);
-    top:0;
-    right: 0;
-    transition: all 0.3s ease-in-out;
-    background: #636FA4;
-    width: 0;
-    overflow: hidden;
-}
-.show-cart {
-    width: 18rem;
-    padding: 2rem 1.5rem;
-    transform: rotateY(-360deg);
-}
-.cart-item {
-    transition: all 2s ease-in-out;
-}*/
-/*Cart item*/
-/*Banner*/
 
 .espacio-banner-saludo{
     background-image: url("../assets/img/fotobanner.JPG");
@@ -208,127 +186,49 @@ li > a:hover::after, li > a.active-nav::after {
              -9px -9px 8px #ffffff;
 }
 .nuevos {
-    color: lavender;
-    font: italic bold 30px Georgia, Serif;
+    color: rosybrown;
+    font: italic bold 40px Georgia, Serif;
     text-shadow: -1px 2px 0  #636FA4, -2px 3px 0  #661f29;
 }
 .btnVer {
     text-align: center;
     color: #661f29;
-    font-size: 25px;
+    font-size: 19px;
     padding: 10px 20px;
     border-radius: 35px;
     background: linear-gradient(145deg, #d8cfea, #b6aec5);
     box-shadow:  5px 5px 10px #9a93a6,
              -5px -5px 10px #faefff;
-   
     margin: 20px 580px;}
 .cardsLista {
     flex-direction: row;
 }
-/*CARRITOOOOOOOOOOOOOOOOOOOOOOOOOOOO*/
-.cart-overlay{
-    position: fixed;
-    top: 0;
-    right: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(50, 50, 50, 0.5);
-    z-index: 2;
-    visibility: hidden;
-    transition: all 0.2s;
-}
 
-.carritou {
-    padding-top: 50px;
-    position: fixed;
-    top: 0;
-    right: 0;
-    width: 30vw;
-    height: 100%;
-    z-index: 3;
-    background-color: lavenderblush;
-    padding: 1.5rem;
-    transition: all 0.2s;
-    overflow: scroll;
-    transform: translateX(100%);
-}
-.showCart {
-    transform: translateX(0);
-}
-.transparentBcg {
-    visibility: visible;
-}
-/*@media screen and (min-width: 768px) {
-    .cart {
-        width: 30vw;
-        min-width: 450px;
-    }
-} acá la media querie del carrito*/
-.cart-content{
-   /**/
-   padding:10px;
-}
-.close-cart {
-    font-size: 1.7rem;
-    cursor: pointer;
-}
-.cart-item h5 {
-    text-transform: capitalize;
-    text-align: center;
-    letter-spacing: 1px;
-    margin-bottom: 1rem;
-    margin-top: 1rem;
-}
-.cart-item p{
-    font-size: 1rem;
-    text-transform: capitalize;
-    letter-spacing: 1px;
-}
-.cart-item img {
-    margin-left: 1rem; 
-    width: 75px;
-    height: 100px;
-}
-.remove-item {
-    color:rgba(50, 50, 50, 0.5);
-    cursor: pointer;
-}
-.fa-chevron-up, 
-.fa-chevron-down {
-    color: lavenderblush;
-    cursor: pointer
-}
-.cart-item{
-    display: grid;
-    align-items: center;
-    grid-template-columns: auto 1fr auto;
-    grid-column-gap: 1.5rem;
-    margin: 1.5rem 0;
-    background-color: sandybrown;
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    color: #081827;
-}
-.cart-footer {
-    margin-top: 2rem;
-    letter-spacing: 1px;
-    text-align: center;
-}
-.cart-footer h4 {
-    margin-bottom: 1rem;
-}
 /*Detalle compra*/
-.detalle {
-    padding: 15px 30px;
-    text-align: center;
+.totalCarrito {
+    margin: 0.3em 7em;
+    color: saddlebrown;
+    font-size: 1.2rem;
+    font-weight: 600;
 }
-.tablaDetalle{
-    margin: 10px 10px;
-    background-image: linear-gradient(to top #b6aec5, #636FA4);
+.tabla-detalle {
+    margin: 10px 4em;
 }
-
+.filaProductoNuevo {
+    margin: 10px 4em;
+}
+.shopping-cart-quantity-input {
+    margin: 0 35px; 
+    width: 50px;
+}
+.shopping-cart-item-title {
+    font-size: 18px;
+    margin-left: 20px;
+} 
+.comprarButton {
+    margin-right: 9em;
+    font-size: 18px;
+}
 /*Blog*/
 .divBlog {
     background-color: #9999cc;
@@ -406,7 +306,7 @@ li > a:hover::after, li > a.active-nav::after {
     color: black;
 }
 
-/*Pagina registro de usuarios*/
+/*Pagina registro de usuarios
 .body-registro {
     background-image: url(../assets/img/mineralformulario.jpg);
     box-sizing: border-box;
@@ -514,7 +414,7 @@ li > a:hover::after, li > a.active-nav::after {
     padding: 10px;
     margin-top: 20px;
     width: 100%;
-}
+}*/
 }
 /*Cierre vista Desktop*/
 
@@ -725,6 +625,122 @@ li > a:hover::after, li > a.active-nav::after {
     font-style: italic;
     text-shadow: -1px 2px 0  #636FA4, -1px 3px 0  #661f29;
 }
+
+.body-registro {
+    background-image: url(../assets/img/mineralformulario.jpg);
+    box-sizing: border-box;
+    font-family: 'Arial Narrow Bold', sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+    
+}
+/*
+.container {
+    margin: 10px 15px;
+    background-color: #eee;
+    border-radius: 7px;
+    box-shadow: 0 2px 5px rgb(0, 0, 0, 0.3);
+    overflow: hidden;
+    max-width: 90%;
+}
+.header {
+    background-color: thistle;
+    border-bottom: 1px solid rosybrown;
+    padding: 10px 20px;
+}
+.regi {
+    margin: 0;
+    font-style: italic;
+    font-size: 20px;
+    letter-spacing: 1px;
+}
+.formulario {
+  padding: 15px 20px;
+
+}
+.form-control {
+    margin-right: 5px;
+    margin-bottom: 5px;
+    padding-bottom: 10px;
+    position: relative;
+ 
+}
+.texto-input {
+    color: black;
+    font-size: 15px;
+    margin-left: 10px;
+}
+.form-control label {
+    display: inline-block;
+    margin-bottom: 5px;
+}
+.form-control input {
+    border: 2px solid rosybrown;
+    border-radius: 4px;
+    display: block;
+    font-size: 14px;
+    padding: 10px 0;
+    width: 100%;
+    margin: 5px;
+    margin-bottom: 15px;
+}
+.form-control input:focus {
+    outline: 0;
+    border-color: #777;
+}
+
+.form-control.success input {
+    border-color: green;
+}
+
+.form-control.error input {
+    border-color: red;
+    padding-top: 15px;
+}
+
+.form-control i {
+    visibility: hidden;
+    position: absolute;
+    top: 20px;
+    right: 10px;
+    margin-top: 18px;
+}
+
+.form-control.success i.fa-check-circle {
+    color: green;
+    visibility: visible;
+}
+
+.form-control.error i.fa-exclamation-circle {
+    color: red;
+    visibility: visible;
+}
+.form-control small {
+	color: red;
+    visibility: hidden;
+    position: absolute;
+    bottom: 0; 
+    left: 0;
+    margin: 18px 0 0 5px;
+}
+.form-control.error small {
+    visibility: visible;
+ 
+}
+.formulario button {
+    background-color: lightgray;
+    border: 2px solid rosybrown;
+    color: rosybrown;
+    border-radius: 4px;
+    display: block;
+    font-size: 18px;
+	font-weight: 700;
+    padding: 10px;
+    margin-top: 20px;
+    width: 100%;
+}*/
 /*Footer MOBILE*/
 
  .pie{

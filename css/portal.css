@@ -1,14 +1,5 @@
 body {
     background-image: url("../assets/img/fotoportal.JPG");
-    width: auto;
-}
-
-.contenedor-input{
-    display: block;
-    margin-top: 150px;
-    border-radius: 5px;
-    text-align: center;
-    
 }
 .ingresar {
     margin-top: 50px;
@@ -21,6 +12,7 @@ body {
     justify-content: center;
     margin-left: 19em;
 }
+
 .form-group {
     display: flex;
     flex-direction: column;
@@ -69,24 +61,53 @@ body {
 /*Vista Mobile*/
 @media only screen and (max-width: 767px) {
 
+.form {
+        justify-content: center;
+        margin-left: 0;
+    }
 
-.comoEsNombre {
-    text-align: center;
-    padding-bottom: 10px;
-    color: lavender;
-    font: italic bold 25px Georgia, Serif;
+.form-group {
+    display: flex;
+    flex-direction: column;
+    margin: 0 2em;
 }
-.btn-portal {
+.form-input {
+    font-size: 16px;
+    border-radius: 3em;
+    background-color: lavender;
+    padding: 0 1em;
+    margin: 10px 1em;
+}
+.label-form {
+    text-align: center;
+    background-color: rosybrown;
+    margin: 0;
+    padding: 7px 0;
+    border-radius: 1em;
+    color: lavender;
+    font: italic bold 17px Georgia, Serif;
+}
+
+.boton-entrar {
     background: linear-gradient(145deg, #d8cfea, #b6aec5);
-    box-shadow:  4px 4px 3px #7b7686,
-                 -4px -4px 3px #ffffff;
-    border-radius: 7px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    margin-top: 50px;
+    box-shadow:  2px 2px 1px #7b7686,
+             -2px -2px 1px #ffffff;
+    border-radius: 8px;
+    font-family: Verdana;
+    margin: 10px 0 15px 8em;
     color: #735285;
-    font-size: 20px;
-    font-weight: 500;
+    font-size: 16px;
+    font-weight: 800;
     padding: 5px 10px;
     text-align: center;
+    cursor: pointer;
 }
+.iniciar-sesion {
+    color: whitesmoke;
+    font-size: 18px;
+    font-weight: 400;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-top: 15px;
+    margin-left: 15px;
 }
+} /*Cierre vista Mobile*/
