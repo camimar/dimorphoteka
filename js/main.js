@@ -18,6 +18,13 @@ jQuery ('document').ready(function($){
       });
   
   });
+
+//Saludo inicial en portal y trasladando dato a otro html
+
+const saludoUsuario = document.getElementById("nombre-visitante");
+const nombreLS = localStorage.getItem('nombreVisitante');
+saludoUsuario.innerText = nombreLS;
+
 //Array productos descuento para tabla
 
 const productosDescuento = [

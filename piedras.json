@@ -3,56 +3,56 @@
             "nombre": "Cuarzo Jardin",
             "rareza": "Extraña, accesible",
 	        "descripción": "Se trata de un cristal de cuarzo trasparente <br>pero con muchas inclusiones de otros <br>cuarzos dentro,lo que da por resultado,<br> sobre todo en minerales pulidos, <br>un efecto de jardín", 
-            "image": "assets/jsonpiedras/1cuarzojardin.jpg"},
+            "image": "/assets/jsonpiedras/1cuarzojardin.jpg"},
 
    {"id": 2,
             "nombre": "Vanadinita",
             "rareza": "Poco común, no económica",
 	        "descripción":"Su nombre se debe a su alto <br>contenido en el elemento vanadio, <br>aunque en algunos sitios recibe<br> el sinónimo de plomo pardo.<br> Se caracteriza por su crecimiento <br>en prismas hexagonales y su color rojo intenso.", 
-            "image": "assets/jsonpiedras/2vanadinita.jpg"},
+            "image": "/assets/jsonpiedras/2vanadinita.jpg"},
 
     {"id": 3,
             "nombre": "Crisocola",
             "rareza": "Común, económica",
 	        "descripción":"Es un mineral del grupo de silicatos. <br>Podemos observarlo formando <br>incrustaciones en la roca,<br> en masas estalactíticas<br> o bien rellenando vetas,<br> con un intenso color verde brillante a azulado.<br> Los ejemplares de mayor pureza, <br>una vez pulidos llegan a ser piedras<br> ornamentales muy apreciadas.",
-            "image": "assets/jsonpiedras/3crisocola.jpg"},
+            "image": "/assets/jsonpiedras/3crisocola.jpg"},
 
     {"id": 4,
             "nombre": "Crocoíta",
             "rareza": "Poco común, no económica",
 	        "descripción": "La crocoíta aparece comúnmente <br>en forma de cristales,<br> usualmente como largos cristales prismáticos<br> y más raramente como cristales redondeados,<br> pero casi siempre pobremente <br>terminados con un color rojo-jacinto brillante, <br>translúcidos y de brillo adamantino.",
-            "image": "assets/jsonpiedras/4crocoita.jpg"},
+            "image": "/assets/jsonpiedras/4crocoita.jpg"},
 
     {"id": 5,
             "nombre": "Aragonito",
             "rareza": "Común, no económica",
 	        "descripción": "El aragonito o aragonita es una de las <br>formas cristalinas del carbonato de calcio. <br>Puede encontrarse en forma de estalactitas, <br>y con prismas geométricos interesantes, <br>que la convierten en una pieza usual de colección.",
-            "image": "assets/jsonpiedras/5aragonito.jpg"},
+            "image": "/assets/jsonpiedras/5aragonito.jpg"},
 
     {"id": 6,
             "nombre": "Cobalto Calcita",
             "rareza": "Extraña, precios elevados",
 	        "descripción": "La cobaltocalcita o calcita cobaltifera <br>es una variedad de calcita <br>con un pequeño contenido de cobalto. <br>Suele encontrarse en el Norte africano",
-            "image": "assets/jsonpiedras/6cobaltocalcita.jpg"},
+            "image": "/assets/jsonpiedras/6cobaltocalcita.jpg"},
 
 
     {"id": 7,
             "nombre": "Malaquita",
             "rareza": "Común, no económica",
 	        "descripción": "En la naturaleza la encontramos <br>en pequeños cristales,en forma masiva <br>o formando estalactitas. <br>Frecuentemente se encuentra <br>como pseudomorfismo de la azurita.", 
-            "image": "assets/jsonpiedras/7malaquita.jpg"},
+            "image": "/assets/jsonpiedras/7malaquita.jpg"},
 
 
     {"id": 8,
             "nombre": "Mokaita",
             "rareza": "Común, económica",
 	        "descripción": "Es una variedad de Jaspe procedente<br> de australia. Recibe su nombre <br>vulgar de su lugar de procedencia: <br>en la Estación de Mooka, Australia.", 
-            "image": "assets/jsonpiedras/8jaspemokaita.jpg"},
+            "image": "/assets/jsonpiedras/8jaspemokaita.jpg"},
 
     {"id": 9,
             "nombre": "Aragonita azul",
             "rareza": "Poco común, no económica",
 	        "descripción": "El significado de su nombre<br> viene de su descubrimiento<br> en Aragón (España), pero desde <br>entonces se ha encontrado en otros lugares. <br>Dependiendo de su yacimiento, <br>será del color que se encuentre", 
-            "image": "assets/jsonpiedras/9aragonitazul.jpg"}
+            "image": "/assets/jsonpiedras/9aragonitazul.jpg"}
 
 ]

@@ -13,13 +13,6 @@ h2 {text-align: center;
     font-size: 30px;
      color: salmon;
 }
-.saludo {
-    font-size: 15px;
-    font-family: 'Courgette', cursive;
-    color: #f0bde3;
-    opacity: 0.4;
-}
-
 .headerNav {
     z-index: 1;
     background-color: rosybrown;
@@ -32,13 +25,11 @@ h2 {text-align: center;
     left: 0;
     top: 0;
     right: 0; 
-}
-      
+} 
 .logo-nav-container {
     display: flex;
     justify-content: space-between;
-     }
-      
+}     
 .logoNav {
     width: 5%;
     height: 5%;
@@ -55,8 +46,7 @@ html {
     width: 65px;
     margin-left: 20px;
     margin-right: 15px;
-}
-      
+}    
 /*en media querie mobile se activa con Js*/
 .navigation ul {
     list-style: none;
@@ -66,15 +56,13 @@ html {
 .navigation ul li {
     display: inline-block;
     margin: 5px 10px; 
-}
-      
+}    
 .navigation ul li a {
     color: #333;
     display: block;
     padding: 1rem 1rem;
     transition: all 0.4s; 
-}
-      
+}    
 .navigation ul li a::after {
     content: "";
     display: block;
@@ -85,27 +73,37 @@ html {
     background: transparent;
     transition: all 0.9s; 
 }
-      
 li > a:hover::after, li > a.active-nav::after {
     width: 100%;
     background: #000d1a; 
 }
-
 .espacio-banner-saludo{
     background-image: url("../assets/img/fotobanner.JPG");
-    display: flex;
-    justify-content: center;
-    padding: 20px 0;
-    margin: 15px 45px; 
+    padding: 10px 0;
+    margin: 15px 60px; 
     border-radius: 50px;
     box-shadow:  26px 26px 52px #867682,
                  -26px -26px 52px #ffffff;}
 .saludo {
-    margin: 0 5px;
-    font-size: 60px;
+    font-size: 30px;
     font-family: 'Courgette', cursive;
     color: #f0bde3;
     opacity: 0.4;
+    text-align: center;
+}
+.saludo-nombre {
+    font-size: 40px;
+    font-family: 'Courgette', cursive;
+    color: #f0bde3;
+    opacity: 0.4;
+    text-align: center;
+}
+.saludo-dimo {
+    font-size: 40px;
+    font-family: 'Courgette', cursive;
+    color: #f0bde3;
+    opacity: 0.5;
+    text-align: center;
 }
 /*Div cards y tienda*/
 .tienda {
@@ -120,13 +118,10 @@ li > a:hover::after, li > a.active-nav::after {
     font: italic bold 100px Georgia, Serif;
     text-shadow: -4px 3px 0  #ff745b, -14px 7px 0  #661f29;
       }
-
-
 .titulo2 {
     color: #1f241f;
     text-decoration: underline #661f29;
 }
-
 .input-filtrar{
     display: flex;
     margin-top: 20px;
@@ -134,13 +129,15 @@ li > a:hover::after, li > a.active-nav::after {
     justify-content: center;
 }
 .filtrar {
+    color: rosybrown;
     border: 0;
     outline: 0;
     font-size: 25px;
     border-radius: 10px;
     padding: 10px;
-    background-color: #E8CBC0;
+    background-color: whitesmoke;
     text-shadow: 2px 2px 0 white;
+    text-align: center;
 }
 .divCierre {
     display: flex;
@@ -203,7 +200,6 @@ li > a:hover::after, li > a.active-nav::after {
 .cardsLista {
     flex-direction: row;
 }
-
 /*Detalle compra*/
 .totalCarrito {
     margin: 0.3em 7em;
@@ -305,8 +301,7 @@ li > a:hover::after, li > a.active-nav::after {
     background-color: rosybrown;
     color: black;
 }
-
-/*Pagina registro de usuarios
+/*Pagina registro de usuarios*/
 .body-registro {
     background-image: url(../assets/img/mineralformulario.jpg);
     box-sizing: border-box;
@@ -317,7 +312,7 @@ li > a:hover::after, li > a.active-nav::after {
     margin: 0;
     
 }
-.container {
+.contenedor-form{
     margin-left: 300px;
     background-color: #eee;
     border-radius: 7px;
@@ -339,7 +334,7 @@ li > a:hover::after, li > a.active-nav::after {
     letter-spacing: 2px;
 }
 .formulario {
-  padding: 30px 40px;
+    padding: 30px 40px;
 
 }
 .form-control {
@@ -365,16 +360,19 @@ li > a:hover::after, li > a.active-nav::after {
     outline: 0;
     border-color: #777;
 }
-
 .form-control.success input {
     border-color: green;
 }
-
+.text-error-form {
+    font-family: Arial, Helvetica, sans-serif;
+    color: red; 
+    font-size: 12px;
+    text-align: center;
+}
 .form-control.error input {
     border-color: red;
     padding-top: 15px;
 }
-
 .form-control i {
     visibility: hidden;
     position: absolute;
@@ -382,12 +380,10 @@ li > a:hover::after, li > a.active-nav::after {
     right: 10px;
     
 }
-
 .form-control.success i.fa-check-circle {
     color: green;
     visibility: visible;
 }
-
 .form-control.error i.fa-exclamation-circle {
     color: red;
     visibility: visible;
@@ -401,7 +397,7 @@ li > a:hover::after, li > a.active-nav::after {
 }
 .form-control.error small {
     visibility: visible;
- 
+
 }
 .formulario button {
     background-color: lightgray;
@@ -414,11 +410,10 @@ li > a:hover::after, li > a.active-nav::after {
     padding: 10px;
     margin-top: 20px;
     width: 100%;
-}*/
 }
-/*Cierre vista Desktop*/
+}/*Cierre vista Desktop*/
 
-/*Vista Mobile*/
+/*----------------------------------------------Vista Mobile ----------------------------------------------------*/
 @media only screen and (max-width: 767px) {
 
 /*NavBar Mobile*/
@@ -469,7 +464,6 @@ li > a:hover::after, li > a.active-nav::after {
 .logoCarrito {
     width: 45px;
     margin-left: 20px;
-
 }
 /*Index Tienda Mobile*/
 .espacio-banner-saludo{
@@ -481,7 +475,27 @@ li > a:hover::after, li > a.active-nav::after {
     margin: 10px 15px; 
     border-radius: 50px;
     box-shadow:  5px 5px 10px #867682,
-                 -5px -5px 10px #ffffff;}
+                 -5px -5px 10px #ffffff;
+}
+.saludo-dimo {
+    margin: 0 5px;
+    font-family: 'Courgette', cursive;
+    color: #f0bde3;
+    opacity: 0.5;
+}
+.saludo {
+    margin: 0 5px;
+    font-family: 'Courgette', cursive;
+    color: #f0bde3;
+    opacity: 0.5;
+}
+.saludo-nombre {
+    font-size: 18px;
+    font-family: 'Courgette', cursive;
+    color: #f0bde3;
+    opacity: 0.4;
+    text-align: center;
+}
 .titulo {
     color: #d4acca;
     margin: 0 auto;
@@ -489,14 +503,6 @@ li > a:hover::after, li > a.active-nav::after {
     font: italic bold 43px Georgia, Serif;
     text-shadow: -3px 3px 0  #6b5a67, -6px 4px 0  #834a88;
     text-align: center;
-      }
-
-.saludo {
-    margin: 0 5px;
-    font-family: 'Courgette', cursive;
-    color: #f0bde3;
-    
-    opacity: 0.5;
 }
 .titulo2 {
     text-align: center;
@@ -512,6 +518,9 @@ li > a:hover::after, li > a.active-nav::after {
     color: lavander;
     text-align: center;
 }
+.tienda {
+    margin-bottom: 20px;
+}
 .btnMostrar {
     text-align: center;
     color: #661f29;
@@ -520,7 +529,6 @@ li > a:hover::after, li > a.active-nav::after {
     background: linear-gradient(145deg, #d8cfea, #b6aec5);
     box-shadow:  5px 5px 8px #9a93a6,
              -5px -5px 8px #faefff;
-   
     margin: 0 110px 20px 110px;
 }
 .divCierre {
@@ -573,6 +581,31 @@ li > a:hover::after, li > a.active-nav::after {
     margin-left: 0;
     padding-left: 0;
 }
+/*Carrito Mobile*/
+.totalCarrito {
+    color: saddlebrown;
+    font-size: 14px;
+    font-weight: 600;
+}
+.tabla-detalle {
+    margin: 10px 1em;
+}
+.filaProductoNuevo {
+    margin: 10px 1em;
+}
+.shopping-cart-quantity-input {
+    margin: 0 15px;
+    padding: 10px 15px;
+    width: 20px;
+}
+.shopping-cart-item-title {
+    font-size: 10px;
+    margin-left: 10px;
+} 
+.comprarButton {
+    margin-right: 1em;
+    font-size: 14px;
+}
 /*Blog mobile*/
 .divBlog {
     background-color: rgb(158, 139, 139);
@@ -595,7 +628,6 @@ li > a:hover::after, li > a.active-nav::after {
     margin: 20px 30px;
     border: solid lavender 8px!important;
 }
-
 /*Carousel Mobile*/
 .carousel {
     width: 25em;
@@ -636,7 +668,7 @@ li > a:hover::after, li > a.active-nav::after {
     margin: 0;
     
 }
-/*
+
 .container {
     margin: 10px 15px;
     background-color: #eee;
@@ -740,7 +772,13 @@ li > a:hover::after, li > a.active-nav::after {
     padding: 10px;
     margin-top: 20px;
     width: 100%;
-}*/
+}
+.text-error-form {
+    font-family: Arial, Helvetica, sans-serif;
+    color: red; 
+    font-size: 12px;
+    text-align: center;
+}
 /*Footer MOBILE*/
 
  .pie{

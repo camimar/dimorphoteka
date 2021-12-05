@@ -1,6 +1,6 @@
 //Ajax con JSON estático - reflejado en página BLOG
 
-$.get('piedras.json', (response) => {
+$.get('../piedras.json', (response) => {
 
     console.log(response);
     response.forEach((rock) => {

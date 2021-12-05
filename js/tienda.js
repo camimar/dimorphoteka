@@ -2,22 +2,23 @@
 
 const productosTienda = [
 
-   {id: "puntaCuarzo", foto: "'assets/img/puntacuarzo.JPG'" , nombre: "Punta de Cuarzo Cristal", piedra: "Cuarzo Cristal", material: "Cristal", detalle: "Puntas de cuarzo en bruto", precio: 1100},
-   {id: "dijeAgata", foto: "'assets/img/agata.jpeg'", nombre: "Dije corazón Azul", piedra: "Ágata azul", material: "baño de plata", detalle: "Dije de Ágata Azul pulida, <br> en forma de corazón", precio: 620},
-   {id: "anilloPleya", foto: "'assets/img/anillopleyades.JPG'", nombre: "Anillo Pleyades", piedra: "no", material:"Acero dorado", detalle: "Anillo labrado de acero dorado", precio: 500},
-   {id: "arosB", foto: "'assets/img/arosboti.jpg'", nombre: "Aros Botticelli", piedra: "no", material: "Acero dorado", detalle: "Aros tipo chapon colgante en <br>forma de Ostra. Acero dorado", precio: 790},
-   {id: "cuarzoR", foto: "'assets/img/cuarzorolado.jpeg'", nombre: "Cuarzo Rosa Rolado", piedra: "Cuarzo Rosa", material: "no", detalle: "Cristales de cuarzo rosa rolado. <br> Precio por unidad", precio: 180},
-   {id: "anilloVer", foto: "'assets/img/anilloverde.jpeg'", nombre: "Anillo Cuarzo Verde", piedra: "Cuarzo Verde", material: "Alpaca", detalle: "Anillo artesanal regulable, <br> con piedra de dos puntas", precio: 900}, 
-   {id: "anilloAma", foto: "'assets/img/anillo.JPG'", nombre: "Anillo Amatista", piedra: "Amatista", material: "Alpaca", detalle: "Anillo artesanal regulable, <br> con piedra de dos puntas", precio: 900},
-   {id: "dijeRosa", foto: "'assets/img/dijecuarzo.JPG'",nombre: "Dije Cuarzo Rosa", piedra: "Cuarzo Rosa", material: "Alpaca", detalle: "Dije artesnal grande, <br> con forma de obelisco invertido", precio: 2800},
-   {id: "dijeCitri", foto: "'assets/img/citrino.JPG'", nombre: "Dije Citrino", piedra: "Cuarzo Citrino", material: "Alpaca", detalle: "Dije artesanal de Citrino, <br> con piedra engarzada con alpaca", precio: 1600},
-   {id: "dijeCora", foto: "'assets/img/dijecorazon.JPG'", nombre: "Dije Corazón", piedra: "Cuarzo Rosa", material: "Baño de plata", detalle: "Dije en forma de corazon, <br> con piedra y virola", precio: 600},
-   {id: "dijeBello", foto: "'assets/img/dijebellota.JPG'", nombre: "Dije Bellota", piedra: "Cuarzo Citrino y Pirita", material: "Alpaca", detalle: "Dije artesanal con lazo, <br> realizado con piedra en bruto <br>y polvo de pirita", precio: 1000},
-   {id: "dijeGota", foto: "'assets/img/dijegotaverde.JPG'", nombre: "Dije Gota", piedra: "Cuarzo Verde", material: "Baño de plata",  detalle: "Dije de Cuarzo verde, <br> con virola con baño de plata", precio: 700},
+   {id: "puntaCuarzo", foto: "'../assets/img/puntacuarzo.JPG'" , nombre: "Punta de Cuarzo Cristal", piedra: "Cuarzo Cristal", material: "Cristal", detalle: "Puntas de cuarzo en bruto", precio: 1100},
+   {id: "dijeAgata", foto: "'../assets/img/agata.jpeg'", nombre: "Dije corazón Azul", piedra: "Ágata azul", material: "baño de plata", detalle: "Dije de Ágata Azul pulida, <br> en forma de corazón", precio: 620},
+   {id: "anilloPleya", foto: "'../assets/img/anillopleyades.JPG'", nombre: "Anillo Pleyades", piedra: "no", material:"Acero dorado", detalle: "Anillo labrado de acero dorado", precio: 500},
+   {id: "arosB", foto: "'../assets/img/arosboti.jpg'", nombre: "Aros Botticelli", piedra: "no", material: "Acero dorado", detalle: "Aros tipo chapon colgante en <br>forma de Ostra. Acero dorado", precio: 790},
+   {id: "cuarzoR", foto: "'../assets/img/cuarzorolado.jpeg'", nombre: "Cuarzo Rosa Rolado", piedra: "Cuarzo Rosa", material: "no", detalle: "Cristales de cuarzo rosa rolado. <br> Precio por unidad", precio: 180},
+   {id: "anilloVer", foto: "'../assets/img/anilloverde.jpeg'", nombre: "Anillo Cuarzo Verde", piedra: "Cuarzo Verde", material: "Alpaca", detalle: "Anillo artesanal regulable, <br> con piedra de dos puntas", precio: 900}, 
+   {id: "anilloAma", foto: "'../assets/img/anillo.JPG'", nombre: "Anillo Amatista", piedra: "Amatista", material: "Alpaca", detalle: "Anillo artesanal regulable, <br> con piedra de dos puntas", precio: 900},
+   {id: "dijeRosa", foto: "'../assets/img/dijecuarzo.JPG'",nombre: "Dije Cuarzo Rosa", piedra: "Cuarzo Rosa", material: "Alpaca", detalle: "Dije artesnal grande, <br> con forma de obelisco invertido", precio: 2800},
+   {id: "dijeCitri", foto: "'../assets/img/citrino.JPG'", nombre: "Dije Citrino", piedra: "Cuarzo Citrino", material: "Alpaca", detalle: "Dije artesanal de Citrino, <br> con piedra engarzada con alpaca", precio: 1600},
+   {id: "dijeCora", foto: "'../assets/img/dijecorazon.JPG'", nombre: "Dije Corazón", piedra: "Cuarzo Rosa", material: "Baño de plata", detalle: "Dije en forma de corazon, <br> con piedra y virola", precio: 600},
+   {id: "dijeBello", foto: "'../assets/img/dijebellota.JPG'", nombre: "Dije Bellota", piedra: "Cuarzo Citrino y Pirita", material: "Alpaca", detalle: "Dije artesanal con lazo, <br> realizado con piedra en bruto <br>y polvo de pirita", precio: 1000},
+   {id: "dijeGota", foto: "'../assets/img/dijegotaverde.JPG'", nombre: "Dije Gota", piedra: "Cuarzo Verde", material: "Baño de plata",  detalle: "Dije de Cuarzo verde, <br> con virola con baño de plata", precio: 700},
    
 ]
 
 //Plantilla para los productos generados con jquery en dom
+
 for (const prod of productosTienda) {
    $(".milista").append(`<li class="list-group-item item">
                         <img  class="item-image" src=${prod.foto} width="250" height="306"></img>
@@ -38,14 +39,14 @@ function buscarProducto () {
     //DOM 
     const input = document.getElementById("filtrar").value.toUpperCase();
     //console.log(input);
-    const cardContainer = document.getElementById("contenedorCards")
+    const cardContainer = document.getElementById("listado-cards")
     console.log(cardContainer);
 
     const cards = cardContainer.getElementsByClassName("list-group-item");
     console.log(cards);
 
     for(let i = 0; i < cards.length; i++) {
-        let title = cards[i].querySelector(".list-group-item h4.titulo-card");
+        let title = cards[i].querySelector("h3.item-title");
         console.log(title);
 
             if(title.innerText.toUpperCase().indexOf(input) > -1) {
