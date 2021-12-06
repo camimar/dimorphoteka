@@ -10,6 +10,12 @@ portal.addEventListener('click', (e) =>  {
     if (nombreVisitante.value.length != "") {
 
         localStorage.setItem("nombreVisitante", nombreVisitante.value);
+    } else {
+        swal.fire({
+            title: "Error",
+            text: "Necesitas completar este campo para ingresar",
+            type: "error"
+                })
     }
 
 });
