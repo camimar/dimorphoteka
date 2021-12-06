@@ -142,10 +142,10 @@ function addItemToShoppingCart(itemTitle, itemPrice, itemImage) {
             }
 }
 
-   //Creando las filas nuevas dinamicas de cada compra
+//Creando las filas nuevas dinamicas de cada compra
 
-    const shoppingCartRow = document.createElement('div');
-    const shoppingCartContent = `
+const shoppingCartRow = document.createElement('div');
+const shoppingCartContent = `
                 <div class="row shoppingCartItem filaProductoNuevo">
                     <div class="col-6">
                         <div class="shopping-cart-item d-flex align-items-center h-100 border-bottom pb-2 pt-3">
@@ -222,14 +222,13 @@ function quantityChanged(event) {
   //Cierre de compra 
 
 function comprarButtonClicked() {   
-            shoppingCartItemsContainer.innerHTML = '';
-            const { value: okCarrito} = await = Swal.fire({ 
-                icon: 'success',
-                title : 'Gracias por realizar su compra! Su pedido será enviado a su correo electrónico',
-            })
-            if (okCarrito) {    
-                Swal.fire(`${okCarrito}`)
-            }
-            
+    shoppingCartItemsContainer.innerHTML = '';
+        const { value: okCarrito} = await = Swal.fire({ 
+            icon: 'success',
+            title : 'Gracias por realizar su compra! Su pedido será enviado a su correo electrónico',
+        })
+        if (okCarrito) {    
+            Swal.fire(`${okCarrito}`)
+    } 
             updateShoppingCartTotal();
 }
