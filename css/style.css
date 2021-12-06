@@ -276,7 +276,7 @@ li > a:hover::after, li > a.active-nav::after {
     margin: 10px 20px; 
 }
 .logo-footer {
-    width: 45%;
+    width: 80%;
     transition: all 0.5s; 
 }
 .logo-footer:hover {
