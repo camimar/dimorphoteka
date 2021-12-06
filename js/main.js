@@ -88,12 +88,3 @@ $(".contenedorLista").fadeOut().hide()
 $("#ver-productos").on('click', function() {
 	$(".contenedorLista").slideToggle(1000);
 });
-
-
-//Scroll con icono carrito
-
-let scroll = document.getElementById("iconoCarrito");
-scroll.addEventListener("click", (e) => {
-	document.documentElement.scrollTo(0, 9000)
-});
-

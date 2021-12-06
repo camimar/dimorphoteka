@@ -3,18 +3,24 @@
 
 var nombreVisitante= document.getElementById("nombreVisitante");
 
-let boton = document.getElementById("ingreso");
-boton.addEventListener("click", guardarNombre);
-function guardarNombre() {
-	localStorage.setItem("nombreVisitante", nombreVisitante.value);
-  
-   }
+
+let portal = document.getElementById("ingreso");
+portal.addEventListener('click', (e) =>  {
+	e.preventDefault();
+    if (nombreVisitante.value.length != "") {
+
+        localStorage.setItem("nombreVisitante", nombreVisitante.value);
+    }
+
+});
+
 
 //Evento Onclick para redirigir
 
 function abrirNuevaPagina (){
+    if (nombreVisitante.value.length != "") {
     location.href = "pages/tienda.html";
-}
+}}
 
 //Animacion fade para boton inicio
 
